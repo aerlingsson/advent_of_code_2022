@@ -1,5 +1,5 @@
 defmodule AdventOfCode2022.Day1 do
-  @input File.read!("lib/day_1_p1_input.txt")
+  @input File.read!("lib/day_1_input.txt")
     |> String.split("\n\n")
     |> Enum.map(&String.split(&1, "\n"))
     |> Enum.map(fn str_lst ->
