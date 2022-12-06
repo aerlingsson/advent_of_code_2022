@@ -9,4 +9,6 @@ defmodule AdventOfCode2022 do
   defdelegate day_4_p2, to: AdventOfCode2022.Day4, as: :overlapping_assignments
   def day_5_p1, do: AdventOfCode2022.Day5.top_crates(9000)
   def day_5_p2, do: AdventOfCode2022.Day5.top_crates(9001)
+  def day_6_p1, do: AdventOfCode2022.Day6.end_of_first_packet_marker(4)
+  def day_6_p2, do: AdventOfCode2022.Day6.end_of_first_packet_marker(14)
 end

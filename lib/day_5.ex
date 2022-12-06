@@ -38,7 +38,9 @@ defmodule AdventOfCode2022.Day5 do
 
   defp move_crates(count, from_stack, to_stack, 9001 = _crane) do
     {new_from_stack, from_stack_items} = from_stack |> Enum.split(-count)
-    new_to_stack = [from_stack_items |> Enum.reverse() | to_stack |> Enum.reverse()] |> List.flatten()
+
+    new_to_stack =
+      [from_stack_items |> Enum.reverse() | to_stack |> Enum.reverse()] |> List.flatten()
 
     {new_from_stack, new_to_stack |> Enum.reverse()}
   end
